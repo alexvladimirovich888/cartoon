@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CartoonBack</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="favicon.svg">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=VT323&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Twitter Icon -->
+    <div class="twitter-icon">
+        <a href="https://x.com/home" target="_blank">
+            <img src="img/twitter.png" alt="Twitter/X">
+        </a>
+    </div>
+
+
+    
+    <!-- Draggable Tamagotchi -->
+    <div class="tamagotchi" id="tamagotchi">
+        <img src="img/tamagochi.png" alt="Tamagotchi" draggable="false">
+    </div>
+    
+    <!-- Audio for Tamagotchi click sound -->
+    <audio id="tamagotchiSound" preload="auto">
+        <source src="audio/01.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Launch Nostalgia Button -->
+    <div class="launch-nostalgia" id="launchNostalgia">
+        <button class="nostalgia-btn">
+            <i class="fas fa-play"></i>
+            <span>Launch Nostalgia</span>
+        </button>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <video class="hero-video" autoplay muted loop>
+                <source src="img/giphy.mp4" type="video/mp4">
+            </video>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">CartoonBack</h1>
+                    <div class="hero-cta">
+                        <button class="cta-btn primary" onclick="scrollToSection('soundtrack')">
+                            <i class="fas fa-chevron-down"></i>
+                            Visit Childhood
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Floating Channel Logos -->
+            <img src="img/fox.png" class="floating-channel fox-channel" alt="Fox Channel">
+            <img src="img/jetix.png" class="floating-channel jetix-channel" alt="Jetix Channel">
+            <img src="img/cn.png" class="floating-channel cn-channel" alt="Cartoon Network">
+            <img src="img/nickelodeon.png" class="floating-channel nickelodeon-channel" alt="Nickelodeon">
+        </section>
+
+        <!-- Soundtrack Section -->
+        <section id="soundtrack" class="content-section soundtrack-section">
+            <div class="container">
+                <div class="tv-grid">
+                    <div class="tv-item" data-track="13" data-artist="Sum 41">
+                        <img src="img/musictv.png" class="tv-frame" alt="TV Frame">
+                        <div class="tv-screen">
+                            <div class="tv-play-overlay">
+                                <div class="play-text">Press to play</div>
+                            </div>
+                            <video class="tv-video" preload="metadata">
+                                <source src="img/video/nickelodeon.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Movies Section -->
+        <section id="movies" class="content-section movies-section">
+            <div class="container">
+                <div class="gif-grid">
+                    <div class="gif-item">
+                        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZHR1dTBkMmxwcDNweGttYzBxb3A0bmk5am9xdG53ZjZhbmtwanYwZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iFL8qJ5DVusJG/giphy.gif" alt="GIF 1">
+                    </div>
+                    <div class="gif-item">
+                        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcnE5b25rZ2c5aGE4eGk1ZmZqNW5hbnoyejYyaG4xNTdxZXc4YzZnaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/rt7Afig5wBUoo/giphy.gif" alt="GIF 2">
+                    </div>
+                    <div class="gif-item">
+                        <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmxnd3ppbjdodXV6OWFuOHd0NDR2dDE5c2RhcjB0MXg2cWU3dDdjbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/k2eCjTHkZ6r4Y/giphy.gif" alt="GIF 3">
+                    </div>
+                    <div class="gif-item">
+                        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjZldnV1MzIzbTBvcWM4ZzI3ODA5cTJpYzU0aGluNHh1aW41NjhlZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3gYSGMUmx9EQimTXse/giphy.gif" alt="GIF 4">
+                    </div>
+                    <div class="gif-item">
+                        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3Z2anJjdWFlOWh0dWJua2ttMzk2MXp6aTZhaXhlNWpqZ3k3eXJ4YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/g4Ab7h4RsBCZG/giphy.gif" alt="GIF 5">
+                    </div>
+                    <div class="gif-item">
+                        <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDEyY2s1bmMxYjRxOW13bHJnOWpzMHk4a2h5N3FxOGxoaHd1bWNjNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8YlrAzPvIRGww/giphy.gif" alt="GIF 6">
+                    </div>
+                    <div class="gif-item">
+                        <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWtrNWVqb2gwZzNpdjc4ZGZ5NWw3cjB0ZDdpMW16OGEwanhoMGs0YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/10fS0TJxfFRDLW/giphy.gif" alt="GIF 7">
+                    </div>
+                    <div class="gif-item">
+                        <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNDRiY3hxODRkbjR0dno2ZjBxdmh3ZHR2YTNzYWM0cnFndno4d2VucSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9EK6qfLGwmbao/giphy.gif" alt="GIF 8">
+                    </div>
+                    <div class="gif-item">
+                        <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGhnZzh2aTlzOWdwOHA4MTBxbTBkOW41dWN5ZWk3am9uYTU2MXBjdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/GKZlYJLQAwqvm/giphy.gif" alt="GIF 9">
+                    </div>
+                    <div class="gif-item">
+                        <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmFvd2xzY3d3eWd4dXRsbHEwamJlbDdkYXd4enJndTQ2cGd6OGN5ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/t6u9AiKe2aYak/giphy.gif" alt="GIF 10">
+                    </div>
+                    <div class="gif-item">
+                        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaHd0OTI5NDg2dHl5Y3lnc3Rya2QyNGtxMThhMjZhY2hmZjhidjc0ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Q8DTRU46GqpmU/giphy.gif" alt="GIF 11">
+                    </div>
+                    <div class="gif-item">
+                        <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExamx4NGdwZDVzc2o2azg5eHlmMmFqM2Rocm5yMGtjdmN5NmVhcTh1ayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ptS6CV6Ty7Dt26k6wq/giphy.gif" alt="GIF 12">
+                    </div>
+                    <div class="gif-item">
+                        <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExaTdldG80ZXZ0OGN4MDB4Y2E2ZDhodWdkcjIwdWE1MXZwN2JseThoeCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o6nUUbe7g0YiVouNq/giphy.gif" alt="GIF 13">
+                    </div>
+                    <div class="gif-item">
+                        <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeGxvNDB0OWRxemIwdjdvdGVzeThxdGZiemo0Nnhxam12a3R1ODVrZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6YVyDxjSDyFwnCBcPa/giphy.gif" alt="GIF 14">
+                    </div>
+                    <div class="gif-item">
+                        <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXRoN2FsdTBhZXRvN3Z5amVnMTBpcjNzMXF5NHRuaXNkNXUwcmVlOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/aPjgegpT7EFwc/giphy.gif" alt="GIF 15">
+                    </div>
+                    <div class="gif-item">
+                        <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2sxNTZyaGZ4NXF6cjJkYWVxZmg1emdvbnNuOTBmMTdweHJzajNkMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lrnsh9UQzZw6zwptnm/giphy.gif" alt="GIF 16">
+                    </div>
+                    <div class="gif-item">
+                        <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHVvc2s5ejlrcmUzdDJmdDhqY281Y3hjaGUyd3ZnOWUxbmYyMWo1byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3FpqQaBwCRIKQ/giphy.gif" alt="GIF 17">
+                    </div>
+                    <div class="gif-item">
+                        <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWQ0MzYyeTFtd3J1d3E3cnFlaWYxcmptOW9pczA5czNmdXd2aHRzZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l4FGAcX24WrRFno6Q/giphy.gif" alt="GIF 18">
+                    </div>
+                    <div class="gif-item">
+                        <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2F2aGdvYXBkN2twN2w5cmhic21leHUycXZjc3loZ2liajQwd2k1NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/i7iQ6DluDnLeE/giphy.gif" alt="GIF 19">
+                    </div>
+                    <div class="gif-item">
+                        <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeHRmeHZuaGRsa3ZxMzN5NDZxM2JzbHhuaHkwNjdybGFhMWltbHUyeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/WyyhtSnaQl8Eo/giphy.gif" alt="GIF 20">
+                    </div>
+                    <div class="gif-item">
+                        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2cxdGVhcmtzMTI2cGQ0M3M4YzkzcDNzN3RzYXlwbzJ4M3drZXc5bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jmrK3GlXPr5UA/giphy.gif" alt="GIF 21">
+                    </div>
+                    <div class="gif-item">
+                        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3hpN2p6aDV6aHptamZzNHQ5cnB1MW1tZjA0bXMwM3FvbHFmMHp4YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/93lEp11r3nwCNKRv1p/giphy.gif" alt="GIF 22">
+                    </div>
+                    <div class="gif-item">
+                        <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2lvczl2ZDkxOHhkMzQ1b3dkcDd3bXJ6OWliaDJ3NTZ6eGlxZThtMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ORzeXMUodxM9TrArgP/giphy.gif" alt="GIF 23">
+                    </div>
+                    <div class="gif-item">
+                        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzZ3OG93a2d4ZTVtcHFlaGdsdzFwenQ3ZDBqMzB4dXhjOW84eXA1eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2tMZ3c3lR4SfVOvIyZ/giphy.gif" alt="GIF 24">
+                    </div>
+                    <div class="gif-item">
+                        <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHR4dXA2dWk1bW11aW4xdDcybHYwMmc5djZwaWZ2dGRtNGFleHR0ciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/g5UzJYpwszvhm5II5o/giphy.gif" alt="GIF 25">
+                    </div>
+                    <div class="gif-item">
+                        <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXhuanZ1NGZnZXcyNmEwbmQwZGZscmIxbGRvZ2I4Ymppc3E1cjZqYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Vuz4fLZE0TEZPa1xo6/giphy.gif" alt="GIF 26">
+                    </div>
+                    <div class="gif-item">
+                        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTVudnl3ZWhoMTc0ZGZrZzV0NmhmYTAweWNzOWZ1d3hlY2xwdHJ0aCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gJcvQpuy158Os/giphy.gif" alt="GIF 27">
+                    </div>
+                    <div class="gif-item">
+                        <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXdhZnBqanR1dWczbXZwYWpybHBrN3IycGxhcW8xdHUzN3N2ZDZjYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/CKVwcljYh4hfVxSSLq/giphy.gif" alt="GIF 28">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Characters Section -->
+        <section id="moments" class="content-section moments-section">
+            <div class="characters-container">
+                <div class="character-item">
+                    <img src="img/pers/cartman.png" alt="Cartman">
+                </div>
+                <div class="character-item">
+                    <img src="img/pers/kyle.png" alt="Kyle">
+                </div>
+            </div>
+            <div class="dialogue-container">
+                <div class="dialogue-bubble cartman-dialogue">
+                    <p class="dialogue-text">"I have a list of all the Jews at my school and I make sure I update it regularly. Kyle Broflovski, he's number one."</p>
+                    <span class="speaker-name">Cartman</span>
+                </div>
+                <div class="dialogue-bubble kyle-dialogue">
+                    <p class="dialogue-text">"You're insane! You're just an anti-Semite with a platform now!"</p>
+                    <span class="speaker-name">Kyle (shocked and furious)</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Memory Submission Section -->
+        <section id="submit" class="content-section moments-section">
+            <div class="characters-container">
+                <div class="character-item">
+                    <img src="img/pers/butthead.png" alt="Butthead">
+                </div>
+                <div class="character-item">
+                    <img src="img/pers/beavis.png" alt="Beavis">
+                </div>
+            </div>
+            <div class="dialogue-container">
+                <div class="dialogue-bubble cartman-dialogue">
+                    <p class="dialogue-text">"Beavis, you're an idiot."</p>
+                    <span class="speaker-name">Butt-Head</span>
+                </div>
+                <div class="dialogue-bubble kyle-dialogue">
+                    <p class="dialogue-text">"Yeah... well... you're adopted."</p>
+                    <span class="speaker-name">Beavis</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-text">CartoonBack</div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 

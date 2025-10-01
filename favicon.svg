@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Background -->
+  <rect width="32" height="32" fill="#1a1a1a" rx="4"/>
+  
+  <!-- Retro gradient background -->
+  <defs>
+    <linearGradient id="retroGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff00ff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#00ffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffff00;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="discGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff0000;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff6600;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Vinyl record -->
+  <circle cx="16" cy="16" r="12" fill="url(#discGradient)" stroke="#000" stroke-width="1"/>
+  <circle cx="16" cy="16" r="8" fill="#1a1a1a"/>
+  <circle cx="16" cy="16" r="2" fill="#fff"/>
+  
+  <!-- Music notes -->
+  <g fill="#ffff00" stroke="#000" stroke-width="0.5">
+    <!-- Note 1 -->
+    <ellipse cx="8" cy="8" rx="1.5" ry="1"/>
+    <rect x="9" y="6" width="0.8" height="6" rx="0.4"/>
+    
+    <!-- Note 2 -->
+    <ellipse cx="24" cy="10" rx="1.5" ry="1"/>
+    <rect x="25" y="8" width="0.8" height="8" rx="0.4"/>
+    
+    <!-- Note 3 -->
+    <ellipse cx="6" cy="24" rx="1.5" ry="1"/>
+    <rect x="7" y="22" width="0.8" height="6" rx="0.4"/>
+  </g>
+  
+  <!-- Retro wave lines -->
+  <path d="M 4 20 Q 8 18, 12 20 Q 16 22, 20 20 Q 24 18, 28 20" 
+        stroke="#00ffff" stroke-width="1.5" fill="none" opacity="0.8"/>
+  <path d="M 4 22 Q 8 20, 12 22 Q 16 24, 20 22 Q 24 20, 28 22" 
+        stroke="#ff00ff" stroke-width="1" fill="none" opacity="0.6"/>
+  
+  <!-- Glitch effect lines -->
+  <rect x="6" y="4" width="20" height="1" fill="#00ffff" opacity="0.7"/>
+  <rect x="8" y="26" width="16" height="1" fill="#ff00ff" opacity="0.7"/>
+  
+  <!-- Corner accents -->
+  <circle cx="4" cy="4" r="1" fill="#ffff00"/>
+  <circle cx="28" cy="4" r="1" fill="#00ffff"/>
+  <circle cx="4" cy="28" r="1" fill="#ff00ff"/>
+  <circle cx="28" cy="28" r="1" fill="#ffff00"/>
+</svg> 
